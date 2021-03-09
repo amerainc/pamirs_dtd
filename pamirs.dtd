@@ -1,0 +1,57 @@
+<!ELEMENT view (field*|action*|config*|group*)>
+        <!ATTLIST view widget (table|form|detail)>
+        <!ATTLIST view model CDATA>
+        <!ATTLIST view viewName CDATA>
+        <!ATTLIST view menu (true|false|CDATA)>
+        <!--field-->
+        <!ELEMENT field (config?)>
+        <!ATTLIST field name CDATA>
+        <!ATTLIST field label CDATA>
+        <!ATTLIST field widget (Checkbox|RadioGroup|Switch|Select|Integer|Rate|Float|Input|Email|Phone|
+                Password|Upload|UploadImg|TextArea|RichText|DatePicker|DateTimePicker|RangeDatePicker|
+                RangeDatePickerTime|Currency|Tree|TreeSelect|Form|Table|ProgressBar|Feed|Detail|Count)>
+        <!ATTLIST field domain CDATA>
+        <!ATTLIST field hint CDATA>
+        <!ATTLIST field span CDATA>
+        <!ATTLIST field independently-editable (true|false|CDATA) "false">
+        <!--field 存储-->
+        <!ATTLIST field store (true|false) "false">
+        <!--field 状态-->
+        <!ATTLIST field readonly (true|false) "false">
+        <!ATTLIST field invisible (true|false) "false">
+        <!--field 校验相关-->
+        <!ATTLIST field required (true|false) "false">
+        <!ATTLIST field min CDATA>
+        <!ATTLIST field max CDATA>
+        <!ATTLIST field min-length CDATA>
+        <!ATTLIST field max-length CDATA>
+        <!ATTLIST field pattern CDATA>
+        <!--action-->
+        <!ELEMENT action (action|config)>
+        <!ATTLIST action refs CDATA>
+        <!ATTLIST action type (composition)>
+        <!ATTLIST action rule CDATA>
+        <!ATTLIST action confirm CDATA>
+        <!--config-->
+        <!ELEMENT config EMPTY>
+        <!ATTLIST config hint CDATA>
+        <!ATTLIST config format CDATA>
+        <!ATTLIST config width CDATA>
+        <!ATTLIST config reload-target CDATA>
+        <!ATTLIST config domain CDATA>
+        <!ATTLIST config column-width CDATA>
+        <!ATTLIST config excluded-actions CDATA>
+        <!ATTLIST config default-value-fields CDATA>
+        <!ATTLIST config construct-param-fields CDATA>
+        <!ATTLIST config show-overflow-tooltip (true|false)>
+        <!--config 校验相关-->
+        <!ATTLIST config value-same-as CDATA>
+        <!ATTLIST config alue-greater-than CDATA>
+        <!ATTLIST config value-less-than CDATA>
+        <!--group-->
+        <!ELEMENT group (field*|group*)>
+        <!ATTLIST group widget (fieldset|tabs|form-item|h-box|v-box|box-content)>
+        <!ATTLIST group title CDATA>
+        <!ATTLIST group cols CDATA>
+
+
