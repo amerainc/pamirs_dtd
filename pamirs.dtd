@@ -2,6 +2,7 @@
         <!ATTLIST view widget (table|form|detail)>
         <!ATTLIST view model CDATA>
         <!ATTLIST view viewName CDATA>
+        <!ATTLIST view title CDATA>
         <!ATTLIST view menu (true|false)>
         <!--field-->
         <!ELEMENT field (config?)>
