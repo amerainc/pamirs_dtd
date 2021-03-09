@@ -2,7 +2,7 @@
         <!ATTLIST view widget (table|form|detail)>
         <!ATTLIST view model CDATA>
         <!ATTLIST view viewName CDATA>
-        <!ATTLIST view menu (true|false|CDATA)>
+        <!ATTLIST view menu (true|false)>
         <!--field-->
         <!ELEMENT field (config?)>
         <!ATTLIST field name CDATA>
@@ -13,7 +13,7 @@
         <!ATTLIST field domain CDATA>
         <!ATTLIST field hint CDATA>
         <!ATTLIST field span CDATA>
-        <!ATTLIST field independently-editable (true|false|CDATA) "false">
+        <!ATTLIST field independently-editable (true|false) "false">
         <!--field 存储-->
         <!ATTLIST field store (true|false) "false">
         <!--field 状态-->
